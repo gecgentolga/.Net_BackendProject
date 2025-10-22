@@ -1,0 +1,17 @@
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/bin/Debug/net8.0/DataAcces.deps.json
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/bin/Debug/net8.0/DataAcces.dll
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/bin/Debug/net8.0/DataAcces.pdb
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/bin/Debug/net8.0/Entities.dll
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/bin/Debug/net8.0/Entities.pdb
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/DataAcces.csproj.AssemblyReference.cache
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/DataAcces.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/DataAcces.AssemblyInfoInputs.cache
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/DataAcces.AssemblyInfo.cs
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/DataAcces.csproj.CoreCompileInputs.cache
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/DataAcces.csproj.Up2Date
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/DataAcces.dll
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/refint/DataAcces.dll
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/DataAcces.pdb
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/ref/DataAcces.dll
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/bin/Debug/net8.0/DataAcces.runtimeconfig.json
+/Users/tolgagecgen/RiderProjects/MyFinalProject/DataAcces/obj/Debug/net8.0/DataAcces.genruntimeconfig.cache
