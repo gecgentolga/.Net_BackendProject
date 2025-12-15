@@ -43,13 +43,14 @@ public class ProductManager : IProductService
             _productDal.GetAll().OrderBy(p => p.ProductId).ToList(), 
             Messages.ProductsListed);
     }
- 
+    [CacheAspect]
     public IDataResult<List<Product>> GetByCategory(int id)
     {
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.CategoryId == id),
             Messages.ProductsListed);
     }
-
+    
+    [CacheAspect]
     public IDataResult<List<Product>> GetByUnitPrice(decimal min, decimal max)
     {
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.UnitPrice >= min && p.UnitPrice <= max),
@@ -57,7 +58,7 @@ public class ProductManager : IProductService
     }
 
    
-
+    [CacheAspect]
     public IDataResult<List<ProductDetailDto>> GetProductDetails(int id)
     {
         return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetails(id),Messages.ProductDetailsListed);
@@ -76,7 +77,7 @@ public class ProductManager : IProductService
 
     [SecuredOperation("product.add,admin")]
     [ValidationAspect(typeof(ProductValidator))]
-    [CacheRemoveAspect("IProductService.Get")] 
+    [CacheRemoveAspect("IProductService.Get")]
     public IResult Add(Product product)
     {
         IResult result = BusinessRules.Run(CheckIfProductNameExists(product.ProductName),
@@ -88,7 +89,7 @@ public class ProductManager : IProductService
         }
 
         _productDal.Add(product);
-        return new SuccessResult(Messages.ProductAdded);
+        return new SuccessResult(Messages.ProductAdded+". Id of product: "+product.ProductId);
     }
 
     [ValidationAspect(typeof(ProductValidator))]
@@ -100,6 +101,7 @@ public class ProductManager : IProductService
     }
 
     [SecuredOperation("product.delete,admin")]
+   [CacheRemoveAspect("IProductService.Get")] 
     public IResult Delete(int productId)
     {
         var product = _productDal.Get(p => p.ProductId == productId);
