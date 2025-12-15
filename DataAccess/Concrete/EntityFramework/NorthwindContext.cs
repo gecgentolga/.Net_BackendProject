@@ -9,7 +9,7 @@ public class NorthwindContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
-            optionsBuilder.UseNpgsql("Host=localhost;Database=NorthwindDb;Username=postgres;Password=123Tolga");
+            optionsBuilder.UseNpgsql("Host=yourHost;Database=yourDatabase;Username=yourUserName;Password=yourPassword");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
